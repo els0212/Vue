@@ -43,6 +43,27 @@
         <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
       </ol>
     </div>
+
+
+    <div id="app-8">
+      <p>Using mustaches: {{rawHtml}}</p>
+      <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+    </div>
+
+
+    <div id="app-9">
+      <a v-bind:href="url">binding test</a>
+    </div>
+
+    <div id ="app-10">
+      <p>
+        yes/no 질문을 물어보세요:
+        <input v-model="question"/>
+      </p>
+      <p>{{answer}}</p>
+    </div>
+    <script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="index.js"></script>
   </body>
