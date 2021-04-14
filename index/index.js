@@ -121,3 +121,10 @@ var app10 = new Vue({
     }
   }
 })
+
+var app11 = new Vue({
+  el:"#app-11",
+  data:{
+    awesome:false
+  }
+})
